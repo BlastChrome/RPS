@@ -10,6 +10,13 @@
   --red: #ef3e36;
 }
 
+.winner {
+  color: var(--green) !important;
+}
+.loser {
+  color: var(--red);
+}
+
 html {
   font-family: Roboto Mono, Arial, Helvetica, sans-serif;
 }
