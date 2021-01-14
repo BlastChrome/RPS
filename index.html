@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet"> 
     <title>Rock Paper Scissors</title>
 </head>
 <body> 
@@ -12,45 +13,48 @@
         <section class="section-1">
             <h1>The Machine Uprising Has Begun</h1> 
             <h2>To Survive...Play First to Five</h2> 
-            <h3>Rock Paper Scissors</h3>
+            <h3><span class="rock-span">Rock</span>  <span class="paper-span">Paper</span> <span class="scissor-span">Scissors</span></h3>
         </section> 
 
         <!-- Game section -->
         <section class="section-2">  
-
-            <div class="player-wrap">
-                <h2>Meat-Bag</h2> 
-                <div class="inner-wrap">
-                    <div class="icon-wrap">
-                        <img src="/icons/Person-icon.png" alt="">
-                        <img src="/icons/Rock.png" alt="">
-                        <img src="/icons/Paper.png" alt="">
-                        <img src="/icons/Scissors.png" alt="">
-                    </div> 
-                    <h2>Score: <span class="p_score"></span></h2>
-                </div>
-            </div> 
-
-            <h1>VS</h1> 
-
-            <div class="player-wrap">
-                <h2>Meat-Bag</h2> 
+            
+            
+            
+            <div class="player-wrap machine-container"> 
+                <h2>KILL-O-TR0N 5000</h2> 
                 <div class="inner-wrap">
                     <div class="icon-wrap">
                         <img src="/icons/ant-design_robot-outlined.png" alt="Robot">
-                        <img src="/icons/Rock.png" alt="Rock">
-                        <img src="/icons/Paper.png" alt="Paper">
                         <img src="/icons/Scissors.png" alt="Scissors">
+                        <img src="/icons/Paper.png" alt="Paper">
+                        <img src="/icons/Rock.png" alt="Rock">
                     </div> 
                     <h2>Score: <span class="p_score"></span></h2>
                 </div>
             </div> 
+
+            <h1 class="vs">VS</h1> 
+
+            <div class="player-wrap player-container">
+                <h2>Meat-Bag</h2> 
+                <div class="inner-wrap">
+                    <div class="icon-wrap">
+                        <img src="/icons/Rock.png" alt="">
+                        <img src="/icons/Paper.png" alt="">
+                        <img src="/icons/Scissors.png" alt="">
+                        <img src="/icons/Person-icon.png" alt="">
+                    </div> 
+                    <h2 class="player-score">Score: <span class="p-score"></span></h2>
+                </div>
+            </div> 
+
 
         </section> 
 
         <!-- End section -->
         <section class="section-3">
-
+            <button>Play Again</button>
         </section>
     </main>
 
