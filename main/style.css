@@ -136,3 +136,29 @@ button:hover {
 }
 
 /* END LAST SECTION */
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1024px) {
+  .section-1 {
+    display: block;
+  }
+  .section-1 h1 {
+    font-size: 50px;
+  }
+  .section-1 h2 {
+    font-size: 35px;
+  }
+  .section-1 h3 {
+    font-size: 25px;
+  }
+
+  .section-2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 950px;
+  }
+}
+
+/* MEDIA QUERIES END */
