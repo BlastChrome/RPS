@@ -1,6 +1,7 @@
 /* START GLOBALS*/
 * {
   padding: 0;
+
   border: 0;
   box-sizing: border-box;
   --bg-main: #313715;
@@ -14,7 +15,7 @@
   color: var(--green) !important;
 }
 .loser {
-  color: var(--red);
+  color: var(--red) !important;
 }
 
 html {
@@ -88,7 +89,7 @@ main {
 .inner-wrap {
   background: var(--bg-second);
   border-radius: 8px;
-  padding: 15px 9px;
+  padding: 35px 35px;
   max-width: 420px;
   box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.3);
 }
@@ -98,6 +99,27 @@ main {
   cursor: pointer;
   border-radius: 8px;
   margin: 0 10px;
+}
+
+.inner-wrap img {
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  transition: 0.1s ease-in;
+}
+.card:hover {
+  transform: scale(1.1);
+  border: 3px solid white;
+}
+
+.profile {
+  transform: scale(1.4);
+}
+
+.focus {
+  transform: scale(1.5);
+  border: 3px solid white;
 }
 
 .inner-wrap h2 {
@@ -117,8 +139,8 @@ main {
   text-align: center;
 }
 
-.player-container .player-core {
-  text-align: right;
+.score {
+  text-align: center;
 }
 
 /* END SECTION-2 */
@@ -126,18 +148,19 @@ main {
 /* START LAST SECTION */
 
 button {
-  margin-top: 2rem;
+  margin-top: 4.5rem;
   padding: 12px;
   color: white;
   background-color: var(--red);
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
-  transition: 0.1s ease-in;
+  transition: 0.2s ease-in-out;
+  transform: scale(1.2);
 }
 button:hover {
   color: var(--red);
-  border: 1px solid var(--red);
+  border: 2px solid var(--red);
   background-color: rgb(228, 228, 228);
   /* background-color: crimson; */
 }
@@ -165,6 +188,11 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     width: 950px;
+  }
+  .vs {
+    font-size: 40px;
+  }
+  .button {
   }
 }
 
