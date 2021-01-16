@@ -117,8 +117,6 @@ function gameSet(){
 
 function cpuCardGUI(){ 
 
-
-
     cpuDeck.forEach(card => {
         if(card.classList.contains("focus")){
             card.classList.remove("focus");
@@ -140,7 +138,6 @@ function cardSelect(){
                 // the computer makes it's selection at the same time as the player 
                 let computerChoice = computerPlay(); 
                 if(card.className == "rock card"){    
- 
                     graphicUpdateRock(computerChoice); 
                 } else if(card.className == "paper card"){    
                     graphicUpdatePaper(computerChoice); 
